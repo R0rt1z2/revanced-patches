@@ -7,7 +7,7 @@ import app.revanced.patcher.patch.bytecodePatch
 val unlockPremiumPatch = bytecodePatch(
     name = "Unlock premium",
 ) {
-    compatibleWith("io.yuka.android"("4.29"))
+    compatibleWith("io.yuka.android")
 
     execute {
         isPremiumFingerprint.match(
